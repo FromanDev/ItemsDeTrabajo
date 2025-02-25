@@ -110,6 +110,7 @@ namespace ItemsDeTrabajo.Servicios.Implementacion
                         StatusItemTrabajo = 0
                     };
                     Datos.distribucionItemTrabajos.Add(distribucionItemTrabajo);
+                    usuarioAsignar.NumItemsBaja += 1;
                     itemTrabajoDto.AsignadoUsuario = 1;
                     if (usuarioAsignar.NumItemsAlta > 3)
                         lstUsuariosDisponibles.Remove(usuarioAsignar);
